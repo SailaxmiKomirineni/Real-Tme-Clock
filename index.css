@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.container{
+    height: 100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+}
+.clock{
+    background-color: #fff;
+    width:500px;
+    height:500px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 80px rgba(0,0,0,0.8), 0 0 10px rgba(255,255,255,0.8);
+    position: relative;
+}
+.clock_hour{
+    font-size: 54px;
+    font-weight: 600;
+    position:absolute;   
+    width:60px;
+    text-align: center;
+    /* border:1px solid red; */
+}
+.hour12{
+    top:5px;
+    left:220px;
+}
+.hour6{
+    bottom:5px;
+    left:220px;
+}
+.hour3{
+    top:220px;
+    right:20px;
+}
+.hour9{
+    bottom:220px;
+    left:20px;
+}
+.hour1{
+    top:30px;
+    right:120px;
+}
+.hour7{
+    bottom:30px;
+    left:120px;
+}
+.hour2{
+    top:110px;
+    right: 50px;
+}
+.hour8{
+    bottom:110px;
+    left:50px;
+}
+.hour4{
+    bottom:110px;
+    right: 50px;
+}
+.hour10{
+    top:110px;
+    left:50px;
+}
+.hour5{
+    bottom:30px;
+    right: 120px;
+}
+.hour11{
+    top:30px;
+    left:120px;
+}
+
+.hour_hand, .minute_hand, .second_hand{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:30px;
+    height:30px;
+    /* border:1px solid #000; */
+}
+.hour_hand span{
+    height:120px;
+    width:20px;
+    background-color: #000;
+    display: block;
+    position: absolute;
+    top:-120px;
+    left:5px;
+    border-radius: 50% 50% 0 0;
+}
+.minute_hand span{
+    height:160px;
+    width:15px;
+    background-color: #000;
+    display: block;
+    position: absolute;
+    top:-160px;
+    left:7px;
+    border-radius: 50% 50% 0 0;
+}
+.second_hand span{
+    height:190px;
+    width:10px;
+    background-color: #be1616;
+    display: block;
+    position: absolute;
+    top:-190px;
+    left:10px;
+    border-radius: 50% 50% 0 0;
+}
+.clock_circle{
+    background-color: #be1616;
+    width:50px;
+    height:50px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
